@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Piano Chord Player</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <h1>Piano Chord Player</h1>
+  <div class="keyboard-container">
+    <div id="C-3" class="black-key">
+      <p class="key-note black">C#</p>
+    </div>
+    <div id="C3" class="white-key">
+      <p class="key-note white">C</p>
+    </div>
+    <div id="D-3" class="black-key">
+      <p class="key-note black">D#</p>
+    </div>
+    <div id="D3" class="white-key">
+      <p class="key-note white">D</p>
+    </div>
+    <div id="E3" class="white-key">
+      <p class="key-note white">E</p>
+    </div>
+    <div id="F-3" class="black-key">
+      <p class="key-note black">F#</p>
+    </div>
+    <div id="F3" class="white-key">
+      <p class="key-note white">F</p>
+    </div>
+    <div id="G-3" class="black-key">
+      <p class="key-note black">G#</p>
+    </div>
+    <div id="G3" class="white-key">
+      <p class="key-note white">G</p>
+    </div>
+    <div id="A-4" class="black-key">
+      <p class="key-note black">A#</p>
+    </div>
+    <div id="A4" class="white-key">
+      <p class="key-note white">A</p>
+    </div>
+    <div id="B4" class="white-key">
+      <p class="key-note white">B</p>
+    </div>
+    <div id="C-4" class="black-key">
+      <p class="key-note black">C#</p>
+    </div>
+    <div id="C4" class="white-key">
+      <p class="key-note white">C</p>
+    </div>
+    <div id="D-4" class="black-key">
+      <p class="key-note black">D#</p>
+    </div>
+    <div id="D4" class="white-key">
+      <p class="key-note white">D</p>
+    </div>
+    <div id="E4" class="white-key">
+      <p class="key-note white">E</p>
+    </div>
+    <div id="F-4" class="black-key">
+      <p class="key-note black">F#</p>
+    </div>
+    <div id="F4" class="white-key">
+      <p class="key-note white">F</p>
+    </div>
+    <div id="G-4" class="black-key">
+      <p class="key-note black">G#</p>
+    </div>
+    <div id="G4" class="white-key">
+      <p class="key-note white">G</p>
+    </div>
+    <div id="A-5" class="black-key">
+      <p class="key-note black">A#</p>
+    </div>
+    <div id="A5" class="white-key">
+      <p class="key-note white">A</p>
+    </div>
+    <div id="B5" class="white-key">
+      <p class="key-note white">B</p>
+    </div>
+    <div id="C-5" class="black-key">
+      <p class="key-note black">C#</p>
+    </div>
+    <div id="C5" class="white-key">
+      <p class="key-note white">C</p>
+    </div>
+    <div id="D-5" class="black-key">
+      <p class="key-note black">D#</p>
+    </div>
+    <div id="D5" class="white-key">
+      <p class="key-note white">D</p>
+    </div>
+    <div id="E5" class="white-key">
+      <p class="key-note white">E</p>
+    </div>
+    <div id="F-5" class="black-key">
+      <p class="key-note black">F#</p>
+    </div>
+    <div id="F5" class="white-key">
+      <p class="key-note white">F</p>
+    </div>
+    <div id="G5" class="white-key">
+      <p class="key-note white">G</p>
+    </div>
+  </div>
+
+  <input id="chord-display" type="text" readonly="true">
+  <input id="scale-display" type="text" readonly="true">
+
+
+  <div class="control-panel">
+    <select id="key-select">
+      <option value=0 selected>C</option>
+      <option value=1>Db/C#</option>
+      <option value=2>D</option>
+      <option value=3>Eb/D#</option>
+      <option value=4>E</option>
+      <option value=5>F</option>
+      <option value=6>F#/Gb</option>
+      <option value=7>G</option>
+      <option value=8>Ab/G#</option>
+      <option value=9>A</option>
+      <option value=10>Bb/A#</option>
+      <option value=11>B</option>
+    </select>
+    <button class="scale-up">Scale up ("→")</button>
+    <button class="scale-down">Scale down ("←") </button>
+    <input class="large-checkbox" type="checkbox" id="chords" name="chords" value="off">
+    <label class="label-for-large-checkbox" for="chords">Chords on</label><br>
+  </div>
+  <div id="chord-button-panel">
+    <button class="chord-button" name="chordI" value=0>I ("1")</button>
+    <button class="chord-button" name="chordii" value=1>ii ("2")</button>
+    <button class="chord-button" name="chordiii" value=2>iii ("3")</button>
+    <button class="chord-button" name="chordIV" value=3>IV ("4")</button>
+    <button class="chord-button" name="chordV" value=4>V ("5")</button>
+    <button class="chord-button" name="chordvi" value=5>vi ("6")</button>
+    <button class="chord-button" name="chordvii" value=6>vii(b5) ("7")</button>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="index.js" charset="utf-8"></script>
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+body {
+  background-color: blue;
+}
+
+h1 {
+  color: white;
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 2%;
+  text-align: center;
+}
+
+p {
+  position: absolute;
+  bottom: 0;
+}
+
+.white {
+  font-size: 2rem;
+  margin-left: .77rem;
+  color: black;
+  visibility: hidden;
+}
+
+.black {
+  font-size: 1.5rem;
+  color: white;
+  visibility: hidden;
+}
+
+.keyboard-container {
+  position: static;
+  margin: 1% 10% 2%;
+  text-align: center;
+  background-color: black;
+  width: 62rem;
+  height: 20.1rem;
+}
+
+.white-key {
+  background-color: white;
+  height: 20rem;
+  width: 3rem;
+  display: inline-block;
+  position: relative;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+}
+
+.black-key {
+  background-color: black;
+  height: 14rem;
+  width: 2rem;
+  display: inline-block;
+  position: absolute;
+  border-bottom-right-radius: 5%;
+  border-bottom-left-radius: 5%;
+  z-index: 1;
+  margin-left: 2.15rem;
+  color: white;
+}
+
+.white-key:hover,
+.black-key:hover,
+.played {
+  background-color: grey;
+}
+
+#key-select {
+  border: 3px solid yellow;
+  height: 50px;
+  border-radius: 7px;
+  padding: 0 10px;
+  margin-left: 18%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.scale-up,
+.scale-down {
+  margin-left: 40px;
+  border-radius: 7px;
+  height: 53px;
+  width: 150px;
+}
+
+.large-checkbox {
+  margin-left: 40px;
+  border-top: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+
+}
+
+.label-for-large-checkbox {
+  color: white;
+  font-size: 2.4rem;
+}
+
+#chord-display {
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 7px;
+  width: 150px;
+}
+
+#scale-display {
+  margin: auto;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  border-radius: 7px;
+  width: 650px;
+  margin-top: 20px;
+}
+
+.control-panel {
+  margin-top: 15px;
+  display: block;
+}
+
+#chord-button-panel {
+  margin-top: 15px;
+  margin-left: 10%;
+  display: block;
+}
+
+.chord-button {
+  font-weight: bold;
+  margin-left: 15px;
+  border-radius: 7px;
+  height: 53px;
+  width: 115px;
+}
